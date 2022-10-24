@@ -1,0 +1,25 @@
+#catalogo{
+    background-color: rgb(212, 162, 214);
+    height: 130px;
+    width: 600px;
+    display: flex;
+  
+
+}
+
+.card{
+    border: 3px;
+    border-color: black;
+    border-style: groove;
+    border-radius: 10%;
+    width: 120px;
+    background-color: aquamarine;
+    margin: 5px;
+    font-size: 8px;
+
+}
+
+h4{
+    color: blueviolet;
+}
+

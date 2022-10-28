@@ -2,7 +2,7 @@ function Producto(nombre, precio, stock, cat){
     this.nombre = nombre;
     this.precio =precio;
     this.stock = stock || 0;
-    this.cat = cat
+    this.cat = cat 
     this.restarStock = function(cantidad){
         this.stock -= cantidad
     }
@@ -11,15 +11,15 @@ function Producto(nombre, precio, stock, cat){
     }
 }
 
-let productoA = new Producto("Tortillas De Harina de Maiz", 350, 10, "Comida")
-let productoB = new Producto("Tortillas de Harina de Trigo", 300, 10, "Comida")
-let productoC = new Producto("Tortillas de Harina de Trigo para Burritos", 300, 10, "Comida")
-let productoD = new Producto("Nachos de Harina de Maiz", 250, 10, "Comida")
-let productoE = new Producto("Salsa Tabasco", 750, 10, "Salsa")
-let productoF = new Producto("Salsa Picante Valentina", 1200, 10, "Salsa")
-let productoG = new Producto("Chiles Picantes Varios jalapeños,Habaneros, Arbol", 250, 10, "Comida")
-let productoH = new Producto("Tequila", 2000, 10, "Bebida")
-let productoI = new Producto("Mezcal", 2500, 10, "Bebida")
+let productoA = new Producto("Tortillas De Harina de Maiz", 350, 10, "Comidas")
+let productoB = new Producto("Tortillas de Harina de Trigo", 300, 10, "Comidas")
+let productoC = new Producto("Tortillas de Harina de Trigo para Burritos", 300, 10, "Comidas")
+let productoD = new Producto("Nachos de Harina de Maiz", 250, 10, "Comidas")
+let productoE = new Producto("Salsa Tabasco", 750, 10, "Salsas")
+let productoF = new Producto("Salsa Picante Valentina", 1200, 10, "Salsas")
+let productoG = new Producto("Chiles Picantes Varios jalapeños,Habaneros, Arbol", 250, 10, "Comidas")
+let productoH = new Producto("Tequila", 2000, 10, "Bebidas")
+let productoI = new Producto("Mezcal", 2500, 10, "Bebidas")
 
 let listaProductos = [productoA, productoB, productoC, productoD, productoE, productoF, productoG, productoH, productoI]
 
@@ -47,9 +47,9 @@ function render(lista) {
 }
 render(listaProductosConStock)
 
-let categoriaElegida = ''
+//let categoriaElegida = ''
 
-let categoria = document.getElementById("categoria")
+/*let categoria = document.getElementById("categoria")
 categoria.addEventListener("change", ()=>{categoriaElegida = categoria.value})
 
 let botonFiltrado = document.getElementById("filtrar")
@@ -58,11 +58,39 @@ botonFiltrado.addEventListener("click", filtrado)
 function filtrado(){
     let filtroActual = listaProductos.filter((prod)=>prod.cat == categoriaElegida)
     render(filtroActual)
-}
+}*/
 
 let botonTodos = document.getElementById("todos")
 
 botonTodos.addEventListener("click", ()=>{render(listaProductosConStock)} )
+
+//boton bebidas
+
+let listaBebidas = [productoH, productoI]
+
+let Bebidas = document.getElementById("bebidas")
+
+bebidas.addEventListener("click", ()=>{render(listaBebidas)} )
+
+//boton comidas
+
+let listaComidas = [productoA, productoB, productoC, productoD, productoG]
+
+let Comidas = document.getElementById("comidas")
+
+Comidas.addEventListener("click", ()=>{render(listaComidas)} )
+
+//boton salsas
+
+let listaSalsas = [productoE, productoF]
+
+let Salsas = document.getElementById("salsas")
+
+Salsas.addEventListener("click", ()=>{render(listaSalsas)})
+
+
+
+
 
 
 
@@ -150,3 +178,19 @@ while(opcion != "ESC"){
 if(precioTotal != 0){
     alert("El precio total es: " + precioTotal)
 }*/
+/*localStorage.setItem("coder","bruno27")
+
+let valor = localStorage.getItem("coder")
+
+localStorage.removeItem("coder")
+
+alert(valor)*/
+
+/*localStorage.setItem("unArray", [1,2,3])
+
+let valor = localStorage.getItem("unArray")
+
+console.log(valor)*/
+
+
+

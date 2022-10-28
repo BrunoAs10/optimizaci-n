@@ -1,8 +1,9 @@
 #catalogo{
     background-color: rgb(212, 162, 214);
-    height: 130px;
+    height: 140 px;
     width: 600px;
     display: flex;
+    border-radius: 15px;
   
 
 }
@@ -21,5 +22,9 @@
 
 h4{
     color: blueviolet;
+}
+
+body{
+    background-color: aqua;
 }
 
